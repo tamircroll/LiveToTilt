@@ -40,7 +40,6 @@ public class Mover : MonoBehaviour
 //		rigidbody.AddForce(_dir * speed);
 //	}
 
-	float startingTime;
 
 	IEnumerator EnableRenderer() //Blink every time.
 	{
