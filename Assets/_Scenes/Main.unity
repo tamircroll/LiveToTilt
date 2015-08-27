@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a0e5163302efa4f8a4e4b9fa7a8567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 20
   tilt: 0
   boundry:
     xMin: -17.5
