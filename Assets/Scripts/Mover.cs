@@ -28,7 +28,7 @@ public class Mover : MonoBehaviour
 			if(target){
 				_dir = target.position - rigidbody.position;
 				_dir.Normalize();
-				//transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(_dir), turnSpeed * Time.deltaTime);
+			//	transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(_dir), turnSpeed * Time.deltaTime);
 				float step = speed * Time.deltaTime;
 				transform.rotation = Quaternion.RotateTowards(transform.rotation, target.rotation, step);
 			}

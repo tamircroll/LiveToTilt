@@ -8,22 +8,30 @@ public class Boundry
 }
 
 public class PlayerController : MonoBehaviour {
-
+	
 	public float speed;
 	public float tilt;
 	public Boundry boundry;
 	public int ScoreValue;
+	
+
 	private GameController gameController;
 
 	void FixedUpdate()
 	{
-		float moveHorizontal = Input.GetAxis("Horizontal");
-		float moveVertical = Input.GetAxis("Vertical");
+	//	float moveHorizontal = Input.GetAxis("Horizontal");
+	//	float moveVertical = Input.GetAxis("Vertical");
+	//	Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+		transform.Translate (Input.acceleration.x, 0.0f, Input.acceleration.y);
 
-		Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-		rigidbody.rotation = Quaternion.LookRotation(movement);
-		rigidbody.velocity = movement * speed;
-		rigidbody.transform.Translate (movement * speed * Time.deltaTime, Space.World);
+	//	Vector3 movement = new Vector3(Input.acceleration.x, 0.0f, -Input.acceleration.y);
+
+//		if (movement != Vector3.zero) 
+//		{
+//			transform.rotation = Quaternion.LookRotation (movement);
+	//	}
+	//	rigidbody.velocity = movement * speed;
+	//	rigidbody.transform.Translate (movement * speed * Time.deltaTime, Space.World);
 
 		rigidbody.position = new Vector3
 			(

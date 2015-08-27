@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{B32A6F3F-2E53-3738-DEA0-0D461CFEFD40}") = "LiveToTilt", "Assembly-CSharp.csproj", "{AD21F28F-9D93-AC2A-9F70-7BD6C4C54B73}"
 EndProject
+Project("{B32A6F3F-2E53-3738-DEA0-0D461CFEFD40}") = "LiveToTilt", "Assembly-CSharp-Editor.csproj", "{4F830569-9B91-5C51-BD50-8AD2CC6716A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{AD21F28F-9D93-AC2A-9F70-7BD6C4C54B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD21F28F-9D93-AC2A-9F70-7BD6C4C54B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD21F28F-9D93-AC2A-9F70-7BD6C4C54B73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F830569-9B91-5C51-BD50-8AD2CC6716A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F830569-9B91-5C51-BD50-8AD2CC6716A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F830569-9B91-5C51-BD50-8AD2CC6716A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F830569-9B91-5C51-BD50-8AD2CC6716A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																						GlobalSection(MonoDevelopProperties) = preSolution
+																																													GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

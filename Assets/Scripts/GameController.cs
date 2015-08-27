@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
 
 	void Start()
 	{
+		Screen.orientation = ScreenOrientation.LandscapeLeft;
 		gameOver = false; 
 		restart = false;
 		restartText.text = "";
