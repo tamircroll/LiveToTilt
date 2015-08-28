@@ -13,19 +13,11 @@ public class PlayerController : MonoBehaviour {
 	public float tilt;
 	public Boundry boundry;
 	public int ScoreValue;
-	
 
 	private GameController gameController;
 
 	void FixedUpdate()
 	{
-		//	transform.Translate (Input.acceleration.x, 0.0f, Input.acceleration.y);
-		//	Vector3 movement = new Vector3(Input.acceleration.x, 0.0f, -Input.acceleration.y);
-
-//		float moveHorizontal = Input.GetAxis("Horizontal");
-//		float moveVertical = Input.GetAxis("Vertical");
-
-
 		float moveHorizontal = Input.acceleration.x;
 		float moveVertical = Input.acceleration.y;
 
@@ -38,7 +30,6 @@ public class PlayerController : MonoBehaviour {
 		rigidbody.velocity = movement * speed;
 		rigidbody.transform.Translate (movement * speed * Time.deltaTime, Space.World);
 
-
 		//Keep player in board
 		rigidbody.position = new Vector3
 			(
@@ -46,7 +37,5 @@ public class PlayerController : MonoBehaviour {
 				0.0f,
 				Mathf.Clamp (rigidbody.position.z, boundry.zMin, boundry.zMax)
 			);
-
-
 	}
 }

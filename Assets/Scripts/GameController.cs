@@ -79,7 +79,7 @@ public class GameController : MonoBehaviour {
 			Instantiate (weaponA, weaponPosition, spawnRotation);
 
 			if (gameOver) {
-				restartText.text = "Pess 'R' for Restart";
+				restartText.text = "Tap the screen to Restart";
 				restart = true;
 				GameObject[] gameControllerObject = GameObject.FindGameObjectsWithTag("Enemy");
 				destroyAll(gameControllerObject);
