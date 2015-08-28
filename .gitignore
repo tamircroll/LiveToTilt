@@ -1,9 +1,3 @@
-B15_Ex01_1/bin/Debug/B15_Ex01_1.exe
-B15_Ex01_1/bin/Debug/B15_Ex01_1.pdb
-B15_Ex01_1/obj/x86/Debug/B15_Ex01_1.exe
-B15_Ex01_1/obj/x86/Debug/B15_Ex01_1.pdb
-B15_Ex01_1/StyleCop.Cache
-
 #ignore thumbnails created by windows
 Thumbs.db
 #Ignore files build by Visual Studio
@@ -32,17 +26,9 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
-B15_Ex01_5/StyleCop.Cache
 *.meta
 *.tif
 Library/
-Assets/Materials/
 Temp/
 ProjectSettings/
-Assets/Models/prop_asteroid_01.FBX
-Assets/Models/
-Assets/Prefabs/VFX/
 *.cubemap
-Assets/Audio/explosion_enemy.wav
-Assets/Audio/
-Assets/Done/

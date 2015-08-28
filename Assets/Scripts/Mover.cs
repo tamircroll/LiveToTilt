@@ -36,14 +36,11 @@ public class Mover : MonoBehaviour
 			transform.position = Vector3.MoveTowards(transform.position,target.transform.position, Mathf.Min(startSpeed, 0.2f));
 		}
 	}
-//	void FixedUpdate() {
-//		rigidbody.AddForce(_dir * speed);
+
+
+//	IEnumerator EnableRenderer() //Blink every time.
+//	{
+//		this.renderer.enabled = true;
+//		yield return new WaitForSeconds(0.2F); //Wait after each blink
 //	}
-
-
-	IEnumerator EnableRenderer() //Blink every time.
-	{
-		this.renderer.enabled = true;
-		yield return new WaitForSeconds(0.2F); //Wait after each blink
-	}
 }
