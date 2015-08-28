@@ -13,7 +13,13 @@ public class Mover : MonoBehaviour
 
 	void Start() 
 	{
-		target = GameObject.FindWithTag("Player").transform;
+		var x = GameObject.FindWithTag("Player");
+		if (x != null) 
+		{
+			target = x.transform;
+		} else {
+			Destroy (gameObject);
+		}
 		startTime = System.DateTime.Now;
 	}
 
@@ -22,13 +28,12 @@ public class Mover : MonoBehaviour
 	}
 
 	private void moveTowardsPlayer(){
-		if(transform != null)
+		if(transform != null && target != null && target.transform != null)
 		{
 			if((System.DateTime.Now - startTime).TotalSeconds < 2) return;
 			if(target){
 				_dir = target.position - rigidbody.position;
 				_dir.Normalize();
-			//	transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(_dir), turnSpeed * Time.deltaTime);
 				float step = speed * Time.deltaTime;
 				transform.rotation = Quaternion.RotateTowards(transform.rotation, target.rotation, step);
 			}
@@ -36,11 +41,4 @@ public class Mover : MonoBehaviour
 			transform.position = Vector3.MoveTowards(transform.position,target.transform.position, Mathf.Min(startSpeed, 0.2f));
 		}
 	}
-
-
-//	IEnumerator EnableRenderer() //Blink every time.
-//	{
-//		this.renderer.enabled = true;
-//		yield return new WaitForSeconds(0.2F); //Wait after each blink
-//	}
 }
